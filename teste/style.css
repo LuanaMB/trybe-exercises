@@ -44,7 +44,7 @@
 
   #section2{
     display: inline-block;
-    width: 33,33%;    
+    width: 30%;    
   }
   #imagemsection{
     float: center;
@@ -60,8 +60,15 @@
     font-weight: bold;        
   }
   
+  .aside{
+    width: 30%;
+    text-align: center;
+    float: right;
+    
+  }
   #article{
     max-width: 50%;
+    line-height: 25px;    
   }
   .botao{
     background-color:#2fc18c;
@@ -96,21 +103,16 @@
     background-color: #036b52;
     color: white;
     width: 100%;   
-    text-align: center; 
+    padding: 10px;
+    bottom: 0px;
   }
 
   .footer a{
     text-decoration: none;
     color: white;
     font-family: Helvetica, sans-serif;
-  }
-
-  #rodape{
-    padding: 10px 15px 10px 15px;
-    margin-left: 10px;
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 2px;
+    width: 50%;
+    
   }
 
   .botaofooter{
@@ -121,3 +123,14 @@
     width: 100%;   
     font-weight: bolder;  
   } 
+
+  #nomerodape{
+    text-align: left;
+    width: 50%;
+  }
+
+  #contatotrybe{
+    text-align: right;
+    width: 50%;
+    float: right;
+  }
