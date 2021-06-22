@@ -2,23 +2,21 @@
   body{
     background-color: rgb(253, 251, 251);
     color: black;
-    font-family: sans-serif;
+    font-family: cursive;
   }    
-
+  
   #cabecalho{
     background-color:#036b52;
-    width: 100%;
-    padding: 15px 20px 15px 20px;
+    width: 100%;    
     position: fixed;     
     color: white;  
     top: 0;
     border-bottom: 7px solid #2fc18c;  
-    text-align: center; 
+    text-align: center;     
   }
    
   .link{
     font-family: helvetica, sans-serif;
-    font-weight: bold;
     padding: 5px;  
   }
   
@@ -27,16 +25,31 @@
     list-style: none;
 
   }
-  
+  .link a{
+    text-decoration: none;
+    color: white;
+  }  
+
   #minha_foto{
     border-radius: 50%;
     border: 6px solid #2fc18c;
     width: 150px;
     height: 150px;
-    margin-top: 180px;
-    margin-left: 45%;
   }
-  
+
+  #section{
+    margin-top: 200px;
+    text-align: center;
+  }
+
+  #section2{
+    display: inline-block;
+    width: 33,33%;    
+  }
+  #imagemsection{
+    float: center;
+    margin-left: 10%;
+  }
   #licoes_aprendidas{
     text-align: justify;
     font-weight: bold;        
@@ -47,7 +60,9 @@
     font-weight: bold;        
   }
   
- 
+  #article{
+    max-width: 50%;
+  }
   .botao{
     background-color:#2fc18c;
     border-radius: 10px;
@@ -60,8 +75,7 @@
   }
   
   .centro{
-    text-align: center;
-    font-family: sans-serif;   
+    text-align: center;  
     margin-top: 50px;  
     line-height: 25px;
   }  
@@ -74,10 +88,15 @@
   width: 100px;      
   }
 
+  #h2proximospassos{
+    text-align: center;
+    font-size: 50px;
+  }
   .footer{
     background-color: #036b52;
     color: white;
-    width: 100%;    
+    width: 100%;   
+    text-align: center; 
   }
 
   .footer a{
