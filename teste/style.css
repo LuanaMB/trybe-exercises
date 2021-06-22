@@ -73,9 +73,12 @@
     width: 30%;
     text-align: justify;
     position: fixed;
-    float: right;
+    right: 5px;
   }
 
+  .aside h2, h4{
+    text-align: center;
+  }
   #article{
     line-height: 25px;    
     width: 50%;    
