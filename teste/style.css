@@ -46,6 +46,10 @@
     display: inline-block;
     width: 30%;    
   }
+
+  .sectiontabela{
+    width: 50%;
+  }
   #imagemsection{
     float: center;
     margin-left: 10%;
@@ -55,21 +59,28 @@
     font-weight: bold;        
   }
 
+  #imagemuerj{
+    float: right;
+    width: 30%;
+  }
+
   #licoes_a_aprender{
     text-align: center;
     font-weight: bold;        
   }
   
-  .aside{
+  .aside1{
     width: 30%;
-    text-align: center;
+    text-align: justify;
+    position: fixed;
     float: right;
-    
   }
+
   #article{
-    max-width: 50%;
     line-height: 25px;    
+    width: 50%;    
   }
+
   .botao{
     background-color:#2fc18c;
     border-radius: 10px;
