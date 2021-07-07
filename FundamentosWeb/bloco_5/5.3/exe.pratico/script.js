@@ -80,24 +80,25 @@ function friday(){
   friday.appendChild(buttonFriday);
 }
 friday()
-/*5)DUVIDA
+//5)DUVIDA
 function fridayClick(){
   let getbuttonFriday= document.querySelector('#btn-friday');
   let getFridayDay= document.querySelectorAll('.friday');
   let string= 'Sexta-Feira';
-  console.log(getFridayDay);
+  let fridayArray = [ 4, 11, 18, 25 ];
 
   getbuttonFriday.addEventListener('click',function() {
     for(let index=0; index<getFridayDay.length; index+=1){
-      if(getFridayDay[index].innerHTML==='friday'){
-        getFridayDay.innerText= string;
+      if(getFridayDay[index].innerHTML===fridayArray[index]){
+        getFridayDay.innerHTML= fridayArray[index];
+      } else {
+        getFridayDay.indexHTML= string;
       }
     }
   })
 }
-
 fridayClick()
-//6)*/
+//6)
 const divContainer= document.querySelector('.days-container')
 function zoom(event){
   let days=document.querySelector('#days');
@@ -121,3 +122,49 @@ function tarefas(name){
 }
 tarefas('cozinhar')
 //8)
+function colorTask(color){
+  let myTask= document.querySelector('.my-tasks');
+  let colorTaskBackground= document.createElement('div');  
+  colorTaskBackground.className='task';
+  colorTaskBackground.style.backgroundColor= color;
+  myTask.appendChild(colorTaskBackground);
+}
+colorTask('green')
+/*9)DUVIDA
+function taskSelector(){
+  let task= document.querySelectorAll('.task');
+  task.addEventListener('click', function(){    
+    for(index=0; index<task.length; index +=1){
+      if(task[index].innerHTML==='task'){
+        task[index].classList.remove('task');
+        task[index].classList.add('task selected');
+      } else {
+        task[index].classList.remove('task selected');
+        task[index].classList.add('task');
+      }
+    }  
+  })
+}
+taskSelector()
+*/
+
+
+//10)
+function setDayColor() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+  let taskColor = taskDiv.style.backgroundColor;  
+  
+  days.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+setDayColor();
+//Bonus
