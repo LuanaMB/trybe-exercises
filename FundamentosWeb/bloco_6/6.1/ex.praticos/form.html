@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário</title>
+</head>
+<body>
+  <form method="GET">
+    <fieldset>
+      Nome:<input type="text" name="name" placeholder="Digite seu nome" required maxlength="40">
+      Email:<input type="text" name="email" placeholder="Digite seu email" required maxlength="50">
+      CPF:<input type="text" name="cpf" placeholder="Digite seu CPF" required maxlength="11">
+      Endereço:<input type="text" name="endereço" placeholder="Digite seu endereço" required maxlength="200">
+      Cidade:<input type="text" name="city" placeholder="Digite sua cidade" required maxlength="28"><br><br>
+     <label for"">Estado onde você mora:
+       <select name="estado" id="input-estado"></select>
+      </label>
+      <p>Tipo de moradia</p>
+      <label for="op1">
+        <input type="radio" name="tipo" id="op1" value="moradia" required checked>Casa
+      </label>
+      <label for="op2">
+        <input type="radio" name="tipo" id="op2" value="moradia" required >Apartamento
+      </label>        
+    </fieldset>
+    <fieldset>
+      <p>Resumo do Currículo</p>
+      <textarea rows="10" cols="40" name="resumo" required id="textarea" maxlength="1000"></textarea><br>
+      Cargo:<input type="text" name="cargo"  required maxlength="40">
+      Descrição do cargo:<input type="text" name="cargo"  required maxlength="500">
+      Data de inicio<input type="date" id="input-date" name="data" required>
+    </fieldset>
+  </form>
+</body>
+<script src="script.js"></script>
+</html>
