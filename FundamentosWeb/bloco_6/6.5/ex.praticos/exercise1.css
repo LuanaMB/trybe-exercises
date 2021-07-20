@@ -1,0 +1,19 @@
+body {
+ font-size: 1.2em;
+}
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+figure {
+    margin: 0;
+}
