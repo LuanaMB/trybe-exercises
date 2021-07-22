@@ -80,23 +80,23 @@ function friday(){
   friday.appendChild(buttonFriday);
 }
 friday()
-//5)DUVIDA
-function fridayClick(){
+//5)
+function fridayClick(array){
   let getbuttonFriday= document.querySelector('#btn-friday');
   let getFridayDay= document.querySelectorAll('.friday');
-  let string= 'Sexta-Feira';
-  let fridayArray = [ 4, 11, 18, 25 ];
+  let string= 'Sexta-Feira';  
 
   getbuttonFriday.addEventListener('click',function() {
     for(let index=0; index<getFridayDay.length; index+=1){
-      if(getFridayDay[index].innerHTML===fridayArray[index]){
-        getFridayDay.innerHTML= fridayArray[index];
+      if(getFridayDay[index].innerHTML!=string){
+        getFridayDay[index].innerHTML= string;        
       } else {
-        getFridayDay.indexHTML= string;
+        getFridayDay[index].innerHTMLHTML= fridayArray[index];
       }
     }
   })
 }
+let fridayArray = [ 4, 11, 18, 25 ];
 fridayClick()
 //6)
 const divContainer= document.querySelector('.days-container')
@@ -130,23 +130,23 @@ function colorTask(color){
   myTask.appendChild(colorTaskBackground);
 }
 colorTask('green')
-/*9)DUVIDA
+//9)DUVIDA
 function taskSelector(){
   let task= document.querySelectorAll('.task');
   task.addEventListener('click', function(){    
     for(index=0; index<task.length; index +=1){
-      if(task[index].innerHTML==='task'){
-        task[index].classList.remove('task');
-        task[index].classList.add('task selected');
-      } else {
+      if(task[index].innerHTML!='task'){
         task[index].classList.remove('task selected');
         task[index].classList.add('task');
+      } else {
+        task[index].classList.remove('task');
+        task[index].classList.add('task selected');
       }
     }  
   })
 }
 taskSelector()
-*/
+
 
 
 //10)
