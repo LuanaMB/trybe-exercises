@@ -1,4 +1,4 @@
-//1
+/* //1
 const testingScope = (escopo) => {
   if (escopo === true) {
     let ifScope = "Não devo ser utilizada fora do meu escopo (if)";
@@ -48,8 +48,19 @@ const btnInput = document.querySelector("#btn-input");
 const pInput = document.querySelector("#value-btn");
 let clickCount = 0;
 
-/* btnInput.addEventListener("click", () => (pInput.innerText = clickCount += 1)); */
-
-
 let clicks = 0;
 btnInput.addEventListener('click', () => pInput.innerText = clicks+=1)
+
+ */
+
+const arrayGlobal=['sql','react','javascrip','html'];
+
+const palavra = parametro => {
+  let parametro1 = parametro;
+  let frase= "Tryber x aqui!";
+  let resultado = frase.replace('x', parametro1)
+  return resultado;
+} 
+
+
+
