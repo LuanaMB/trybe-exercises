@@ -53,14 +53,18 @@ btnInput.addEventListener('click', () => pInput.innerText = clicks+=1)
 
  */
 
-const arrayGlobal=['sql','react','javascrip','html'];
 
 const palavra = parametro => {
-  let parametro1 = parametro;
   let frase= "Tryber x aqui!";
-  let resultado = frase.replace('x', parametro1)
-  return resultado;
+  return frase.replace('x', parametro)
 } 
 
+const fraseFinal = array =>{
+  let variavel = palavra('luana')
+  let arrayOrdenada = array.sort()
+  let arrayVazio = ''
+  return `${variavel} minhas principasi habilidades são:
+  ${arrayOrdenada}`
+}
 
-
+console.log(fraseFinal(['sql','react','javascrip','html']))
