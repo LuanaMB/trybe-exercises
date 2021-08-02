@@ -35,7 +35,8 @@ const musicas = [
 ]
 
 function findMusic(id) {
-  return musicas.find((musica)=> musica.id === id)
+  // Adicione seu código aqui
+  return musicas.find((musica) => musica.id === id);
 }
 
 console.log(findMusic('31031685'))

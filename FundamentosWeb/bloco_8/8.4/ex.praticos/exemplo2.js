@@ -83,4 +83,4 @@ const getBestClass = estudantes.map((name) => ({
   }).name
 }));
 
-console.log(getBestClass);
+

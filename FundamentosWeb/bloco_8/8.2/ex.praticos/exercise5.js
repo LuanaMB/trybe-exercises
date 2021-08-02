@@ -70,3 +70,4 @@ function everyoneWasBornOnSecXX() {
 }
 
 assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
+
