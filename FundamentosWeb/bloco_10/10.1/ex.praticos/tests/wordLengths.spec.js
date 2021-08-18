@@ -1,0 +1,1 @@
+const wordLengths = require('../src/wordLengths')
