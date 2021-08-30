@@ -5,13 +5,14 @@ const Animals = [
 ];
 
 const findAnimalByName = (name) => (
-  // Adicione o código aqui.
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const findAnimal = Animals.find((element) => element.name === name);
+    if(findAnimal) { resolve(findAnimal) }
+    return reject(new Error('Nenhum animal com esse nome!'))
+    }, 100);
+  })
 );
-
-const getAnimal = (name) => {
-  // Adicione o código aqui.
-};
-// ---------------------
 
 describe('Testando promise - findAnimalByName', () => {
   describe('Quando existe o animal com o nome procurado', () => {
