@@ -1,11 +1,12 @@
 import React from 'react';
 
+
 class Pokedex extends React.Component {
   render() {
-    const { name, type, averageWeight, image } = this.props.pokemon;
+    const { pokemon: { name, type, averageWeight, image } } = this.props;
     return (
       <div class="app">
-        <main class= "card">
+        <main class= "card" >
           <h2>{name}</h2>
           <p>{type}</p>
           <p>
@@ -17,5 +18,6 @@ class Pokedex extends React.Component {
     );
   };
 };
+
 
 export default Pokedex;
