@@ -6,9 +6,11 @@ import Pokedex from './pokemon';
 
 function App() {
   return (
-    <div class= 'container'>
+    <div>
       <h1>Pokedex</h1>
-      {pokemons.map((pokemon) => <Pokedex key={pokemon.id} pokemon = {pokemon} />)}
+      <section class= 'container'>
+        {pokemons.map((pokemon) => <Pokedex key={pokemon.id} pokemon = {pokemon} />)}
+      </section>
     </div>
   );
 }

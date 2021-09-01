@@ -22,7 +22,7 @@ h1 {
   text-align: center;
   color: #92bbb5;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 5rem;
   text-transform: uppercase;
 }
 
@@ -38,13 +38,17 @@ img{
 
 .container{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 10px 10px;
+  justify-content: space-between;
 }
+
 .app{
   display: flex;
-  justify-content: center;
-  margin: 10px auto 13px auto;
   flex-wrap: wrap;
+  justify-content: space-around;
+  min-width: 25%;
+  margin-top: 25px;
 }
 
 .card {
@@ -58,6 +62,22 @@ img{
   color: #92bbb5;;
   padding: 1rem;
   border-radius: 10px;
-  border-top: 1px solid #726eff;
-  border-bottom: 0.5px solid #726eff;
+  border-top: 2px solid #726eff;
+  border-bottom: 1px solid #726eff;
+}
+
+.card:hover{
+  align-items: center;
+  display: flex;
+  width: 240px;
+  height: 240px;
+  flex-direction: column;
+  justify-content: center;
+  background:#92bbb5;
+  color:  #37465B;
+  padding: 1rem;
+  border-radius: 10px;
+  border-top: 2px solid #726eff;
+  border-bottom: 1px solid #726eff;
+  transition: width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
 }
